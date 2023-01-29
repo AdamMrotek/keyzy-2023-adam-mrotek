@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     // className={`${outfit.className}`}
-    <html className={`${outfit.variable}`} lang="en">
+    <html className={`${outfit.variable} text-navy`} lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
