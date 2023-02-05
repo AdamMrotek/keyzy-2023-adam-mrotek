@@ -46,7 +46,7 @@ export default function ToolTip(props: ToolTip) {
           transform: `translate(${moveBy}px)`,
           opacity: `${divWidth ? 1 : 0}`,
         }}
-        className="text-center w-12 inline-block text-parchment bg-navy px-2 py-1 rounded-full "
+        className="text-center w-12 inline-block text-parchment bg-azure px-2 py-1 rounded-full "
       >
         {value}
         {extraSymbol ? extraSymbol : ""}

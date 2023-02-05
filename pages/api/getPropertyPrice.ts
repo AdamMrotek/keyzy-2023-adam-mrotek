@@ -19,8 +19,9 @@ const getPropertyPrice = async (req: NextApiRequest, res: NextApiResponse) => {
   const html = await response.text();
   const dom = new JSDOM(html);
   const document = dom.window.document;
-  const price = document.querySelector("._1gfnqJ3Vtd1z40MlC0MzXu")?.firstChild
-    ?.textContent;
+  const price = document
+    .querySelector("._1gfnqJ3Vtd1z40MlC0MzXu")
+    ?.firstChild?.textContent?.replace("£", "");
   const postCode = document
     .querySelector("#mapTitleScrollAnchor")
     ?.textContent?.split(",")

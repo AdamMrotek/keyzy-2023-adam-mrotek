@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
+  mode: "jit",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -17,6 +18,9 @@ module.exports = {
         magenta: "#BF1263",
         azure: "#0E79B2",
         parchment: "#FBFFF1",
+      },
+      gridTemplateColumns: {
+        "1-2": "1fr 2fr",
       },
     },
   },
