@@ -45,10 +45,9 @@ export default function FormInputs() {
       " ",
       "_"
     );
-  console.log(TABLET_MESSAGE);
   return (
     <div
-      className={`before:absolute before:top-0 before:translate-x-1/2 before: flex flex-col befo md:flex-row md:before:content-['${TABLET_MESSAGE}'] my-4 p-8 lg:before:content-['']`}
+      className={`before:absolute before:top-0 before:translate-x-1/2 before: flex flex-col befo md:flex-row md:before:content-['Not_tablet_friendly_-_please_use_mobile_or_desktop_device'] my-4 p-8 lg:before:content-['']`}
     >
       <div className="grid grid-cols-1-2 items-center gap-4 border-magenta border-2 border-solid md:w-1/2 p-4">
         <h2 className="text-3xl col-span-2 font-bold">Inputs</h2>
